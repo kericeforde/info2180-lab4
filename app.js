@@ -6,7 +6,7 @@ search.addEventListener("click",function e(){
     request.onreadystatechange = function display(){
         if (request.readyState=== XMLHttpRequest.DONE && request.status===200){
             
-            document.getElementById("result").innerHTML=request.responseText;
+            alert(request.responseText);
         }
     }
     request.open("GET","http://localhost/info2180-lab4/info2180-lab4/superheroes.php",true);
