@@ -17,6 +17,7 @@ request.onreadystatechange = function display(){
             document.getElementById("result").innerHTML=request.responseText;
         }
     }
+    //Setting the query to the value from the textfield.
     request.open("GET",`superheroes.php? query=${text} `,true);
     request.send();
 
