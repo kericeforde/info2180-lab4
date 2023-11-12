@@ -3,12 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Avengers</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>Avengers Character Search</h1>
-    <button type="Search" class="btn">Search</button>
+    <p>Search by full name or alias</p>
+    <form action="#" method="post">
+      <div class="textfield">
+        <input
+          id="text"
+          class="text"
+          placeholder="eg.Captain America or Steve Rogers"
+        />
+      </div>
+      <button type="submit" class="btn">Search</button>
+    </form>
+    <p>Result</p>
+    <hr />
+    <div class="result" id="result"></div>
   </body>
 </html>
 <script src="app.js"></script>
